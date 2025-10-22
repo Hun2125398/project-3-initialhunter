@@ -2,15 +2,15 @@ package com.example.streams;
 
 /**
  * Enhanced example runner demonstrating exception handling and AI analysis integration
- *
+ <p></p>
  * AI Analysis Prompts to Use:
- *
+ <p></p>
  * 1. "Analyze this Stream API method implementation. What edge cases should I consider?"
  * 2. "What exceptions should this method throw and when? Suggest a robust error handling strategy."
  * 3. "Review my exception handling. Are there any improvements or missing scenarios?"
  * 4. "How can I make this Stream operation more efficient or readable?"
  * 5. "What additional validation should I add to make this method production-ready?"
- *
+ <p></p>
  * Example Output (with exception handling):
  * <pre>
  * ===== Normal Operation =====
@@ -53,8 +53,6 @@ public class RowRowRowYourBoat {
             System.out.println("9) " + stream.topTenUniqueOdd());
             System.out.println("10) " + stream.average());
 
-        } catch (InvalidDataException e) {
-            System.err.println("Data processing error: " + e.getMessage());
         } catch (Exception e) {
             System.err.println("Unexpected error: " + e.getMessage());
         }
@@ -96,8 +94,6 @@ public class RowRowRowYourBoat {
             GentlyDownTheStream problemStream = new GentlyDownTheStream();
             problemStream.integerValues = java.util.List.of(); // Empty for average calculation
             problemStream.average();
-        } catch (InvalidDataException e) {
-            System.out.println("Testing invalid data: InvalidDataException caught");
         } catch (Exception e) {
             System.out.println("Unexpected exception in data test: " + e.getClass().getSimpleName());
         }

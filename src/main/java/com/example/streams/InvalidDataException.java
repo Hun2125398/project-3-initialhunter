@@ -1,9 +1,10 @@
 package com.example.streams;
 
-public class InvalidDataException extends Exception {
-
-    public InvalidDataException() {
-    }
+/**
+ * Custom exception for invalid data scenarios
+ * Thrown when stream operations fail or data cannot be processed
+ */
+public class InvalidDataException extends RuntimeException {
 
     public InvalidDataException(String message) {
         super(message);
@@ -11,9 +12,5 @@ public class InvalidDataException extends Exception {
 
     public InvalidDataException(String message, Throwable cause) {
         super(message, cause);
-    }
-
-    public InvalidDataException(Throwable cause) {
-        super(cause);
     }
 }
